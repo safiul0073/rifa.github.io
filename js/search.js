@@ -264,7 +264,19 @@ const docsTopics = [
     {
         title: "Server",
         url: "#additional_server"
-    }
+    },
+    {
+        title: "Cache Server Setup",
+        url: "#cache_server"
+    },
+    {
+        title: "Octane Server Setup",
+        url: "#octane_server"
+    },
+    {
+        title: "CI/CD with GitHub Actions and Laravel Envoy",
+        url: "#ci_cd_deployment"
+    },
 ];
 
 const suggestionsList = document.getElementById("suggestions-list");
