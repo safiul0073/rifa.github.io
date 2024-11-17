@@ -1262,7 +1262,7 @@
                   <div id="vps_setup_automated">
                     <h2>Automated Deployment (VPS)</h2>
                     <p>Access your VPS Server</p>
-                    <ol>
+                    <ol id="vps_access">
                       <li>You can access via SSH (recommended SSH)</li>
                       <li>
                         In SSH you can use this command
@@ -3018,7 +3018,7 @@
                   
                     <h3>Prerequisites</h3>
                     <ul>
-                      <li>PHP 8.2 or higher.</li>
+                      <li>PHP 8.2 or higher. (recommended 8.3)</li>
                       <li>Composer installed on your system.</li>
                       <li>A Laravel application set up.</li>
                     </ul>
@@ -3026,11 +3026,11 @@
                     <h3>Installation</h3>
                     <ol>
                       <li><strong>Install Laravel Octane:</strong>
-                        <pre><code class="language-bash">composer require laravel/octane</code></pre>
+                        <p>Our project already have it installed.</p>
                       </li>
                       <li><strong>Publish Octane Configuration:</strong>
-                        <pre><code class="language-bash">php artisan octane:install</code></pre>
-                        <p>This will install Octane and allow you to select a server (e.g., Swoole or RoadRunner).</p>
+                        <p>Already published octane configuration. you can check it on <code>config/octane.php</code> </p>
+                        <p>This will install Octane and allow you to select a server (e.g., Swoole or RoadRunner). Default Selected on config is roadrunner. You can change it on .env file <code>OCTANE_SERVER</code></p>
                       </li>
                       <li><strong>Install Your Selected Server:</strong>
                         <p>For Swoole:</p>
@@ -3101,7 +3101,7 @@
                       <li>Laravel Envoy installed globally:
                         <pre><code class="language-bash">composer global require laravel/envoy</code></pre>
                       </li>
-                      <li>A server (e.g., VPS or dedicated server) accessible via SSH.</li>
+                      <li>A server (e.g., VPS or dedicated server) accessible via SSH. (<a href="#vps_access">Check this guide</a>)</li>
                       <li>Set up SSH keys for passwordless access between the CI/CD pipeline and the server. <a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">Follow this guide</a></li>
                     </ul>
                   
@@ -3263,10 +3263,10 @@
                             - name: Install SSH Key
                               uses: shimataro/ssh-key-action@v2
                               with:
-                                key: ${{ secrets.SSH_PRIVATE_KEY }}
+                                key: ${{ secrets.SSH_PRIVATE_KEY }} # SSH private key content from GitHub secrets
                                 known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
                             - name: Adding Known Hosts
-                              run: ssh-keyscan -H your-server-ip >> ~/.ssh/known_hosts
+                              run: ssh-keyscan -H YOUR_SERVER_IP >> ~/.ssh/known_hosts #example: ssh-keyscan -H 237.84.2.178 >> ~/.ssh/known_hosts
                             - name: Setup PHP
                               uses: shivammathur/setup-php@v2
                               with:
@@ -3389,7 +3389,16 @@
                 >
                   <div class="shortcode_title" id="prize_category">
                     <h2 class="load-order-2">Prize Category</h2>
-                    <p>You can add, edit and delete Prize Category</p>
+                    <p>
+                      Every lottery has its own Prize Category. Such as Bike, Car, Mobile, Laptop, Money etc.
+                      In lottery management at first you need add a Category and then add a Prize under that Category.
+                    </p>
+                    <p>Prize Category has three fields,</p>
+                    <ul>
+                      <li>Category Name (Required)</li>
+                      <li>Category Image (Required)</li>
+                      <li>Status (Required)</li>
+                    </ul>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3429,7 +3438,22 @@
                   </div>
                   <div class="shortcode_title" id="prize">
                     <h2 class="load-order-2">Prize</h2>
-                    <p>You can add, edit and delete Prize</p>
+                    <p>
+                      A Prize is a specific item that can be won in a lottery. Prizes can be used to reward participants for their success in the lottery.
+                      In lottery management at first you need add a Category and then add a Prize under that Category.
+
+                      Prize has some fields,
+                    </p>
+                    <ul>
+                      <li>Prize Category (Required)</li>
+                      <li>Prize Title (Required)</li>
+                      <li>Prize Value (Required, Number Only)</li>
+                      <li>Prize Images as Gallery (Required), You can add multiple images</li></li>
+                      <li>Prize Description (Required)</li>
+                      <li>You can prize specification if you want, If you give prize as car then you can add specification like color, model, engine etc
+                        So specification has three fields, Specification Name, Specification Value, Icon.
+                      </li>
+                    </ul>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3472,7 +3496,9 @@
                   </div>
                   <div class="shortcode_title" id="new_lottery">
                     <h2 class="load-order-2">New Lottery</h2>
-                    <p>You can add, edit and delete Lottery </p>
+                    <p>
+                      In this section you can add or edit a lottery also you can delete and publish.
+                    </p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3501,13 +3527,13 @@
                     <div>
                       <p>Add or Edit a lottery by following this screenshot</p>
                       <ul>
-                        <li>Tile for the lottery</li>
-                        <li>Select a Prize Money</li>
-                        <li>Set Ticket Price</li>
-                        <li>Also set Ticket Limit</li>
-                        <li>When the lottery will draw (Set Date and time)</li>
-                        <li>Give Some description for the lottery</li>
-                        <li>Add a banner image as Thumbnail</li>
+                        <li>Tile for the lottery (Required)</li>
+                        <li>Select a Prize Money (Required)</li>
+                        <li>Set Ticket Price (Required, Number Only)</li>
+                        <li>Also set Ticket Limit (Required)</li>
+                        <li>When the lottery will draw (Set Date and time) (Required)</li>
+                        <li>Give Some description for the lottery (Required)</li>
+                        <li>Add a banner image as Thumbnail (Required)</li>
                         <li>If it manual draw then check the checkbox</li>
                         <li>You can publish the lottery by checking the checkbox</li>
                         <li>
@@ -3530,7 +3556,7 @@
                   </div>
                   <div class="shortcode_title" id="all_lottery">
                     <h2 class="load-order-2">All Lottery</h2>
-                    <p>You can add, edit and delete Lottery</p>
+                    <p>You can see all lottery List by following this screenshot</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3559,7 +3585,7 @@
                   </div>
                   <div class="shortcode_title" id="winner">
                     <h2 class="load-order-2">Winner</h2>
-                    <p>You can see the all winner List</p>
+                    <p>You can see the all winner List and claim by following this screenshot</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3601,7 +3627,7 @@
                   </div>
                   <div class="shortcode_title" id="manual_draw">
                     <h2 class="load-order-2">Manual Draw</h2>
-                    <p>Manually draw a lottery by following this screenshot</p>
+                    <p>A lottery have two type draw one is normal draw and another is manual draw. In this manual draw admin can select a lottery and then click draw. after few sec. admin will see an announcement for winner. Only manual draw lottery can use this feature.</p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3633,8 +3659,17 @@
                   id="blog_management"
                 >
                   <div class="shortcode_title" id="blog_category">
+                    <h1>Blog</h1>
                     <h2 class="load-order-2">Category</h2>
-                    <p>You can add, edit and delete Blog Category</p>
+                    <p>
+                      Every blog has a category, you can add, edit and delete.
+                      category has three fields, name, parent category, status
+                    </p>
+                    <ul>
+                      <li>Category Name (Required)</li>
+                      <li>Parent Category (Optional)</li>
+                      <li>Status (Required)</li>
+                    </ul>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3672,7 +3707,15 @@
                   </div>
                   <div class="shortcode_title" id="blog_tag">
                     <h2 class="load-order-2">Tags</h2>
-                    <p>You can add, edit and delete Tag</p>
+                    <p>
+                      Every blog has multiple tags, you can add, edit and delete.
+                      tags has two fields, name, parent tag and status
+                    </p>
+                    <ul>
+                      <li>Tag Name (Required)</li>
+                      <li>Parent Tag (Optional)</li>
+                      <li>Status (Required)</li>
+                    </ul>
                     <div class="steps-panel">
                       <ol class="ordered-list">
                         <li>
@@ -3734,6 +3777,21 @@
                         delete Blogs
                       </figcaption>
                     </figure>
+                    <p>
+                      By following this screenshot you can add or edit by this
+                      form
+                    </p>
+                    <ul>
+                      <li>Title (Required)</li>
+                      <li>Short Description (Required)</li>
+                      <li>Content (Required)</li>
+                      <li>Category (Required)</li>
+                      <li>Tags (Required)</li>
+                      <li>Thumbnail/Banner (Required)</li>
+                      <li>Featured (Required)</li>
+                      <li>Seo Title (Optional)</li>                    
+                      <li>Seo Description (Optional)</li>
+                    </ul>
                     <figure>
                       <img
                         class="w-100 img-thumbnail"
@@ -3745,6 +3803,7 @@
                         form
                       </figcaption>
                     </figure>
+                    <p>You can see blog details on this page</p>
                     <figure>
                       <img
                         class="w-100 img-thumbnail"
@@ -3761,7 +3820,9 @@
                 <article class="documentation_body doc-section" id="subscriber">
                   <div class="shortcode_title">
                     <h2>Subscriber</h2>
-                    <p>You can send email to all .</p>
+                    <p>You can send email to all subscribers. 
+                      You just need to Select email template or you can write custom subject and message then send. It will send instanly to all subscribers
+                    </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -3789,7 +3850,9 @@
                     <h2>Contact</h2>
                     <p>
                       You can see contact list also you can send email to a
-                      contact
+                      contact. As you can see in the screenshot contact details have Name, Email and Subject also Message. 
+                      If you need send any message to a contact you can see it on this page <strong>Send reply to this contact via email</strong>.
+                      Just select an email template or write custom subject and message then send.
                     </p>
                   </div>
                   <div class="steps-panel">
@@ -3838,6 +3901,8 @@
                   class="documentation_body doc-section"
                   id="deposit_requests"
                 >
+                <h1>Deposit</h1>
+                <br>
                   <div class="shortcode_title">
                     <h2>Request</h2>
                     <p>You can see requested deposit list</p>
@@ -3857,6 +3922,17 @@
                     <img
                       class="w-100 img-thumbnail"
                       src="img/admin/deposit2.png"
+                      alt="go to Appearance -> Import Demo Data"
+                    />
+                    <figcaption class="text-center">
+                      By following this screenshot you can see deposit request
+                      list
+                    </figcaption>
+                  </figure>
+                  <figure>
+                    <img
+                      class="w-100 img-thumbnail"
+                      src="img/admin/depositView.png"
                       alt="go to Appearance -> Import Demo Data"
                     />
                     <figcaption class="text-center">
@@ -3961,9 +4037,11 @@
                   class="documentation_body doc-section"
                   id="withdraw_requests"
                 >
+                <h1>Withdraw</h1>
+                <br>
                   <div class="shortcode_title">
                     <h2>Request</h2>
-                    <p>You can see requested withdraw list</p>
+                    <p>You can see requested withdraw list. </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -3985,6 +4063,17 @@
                     <figcaption class="text-center">
                       By following this screenshot you can see withdraw request
                       list
+                    </figcaption>
+                  </figure>
+                  <p>Withdraw Request View. You can accept or reject withdraw request.</p>
+                  <figure>
+                    <img
+                      class="w-100 img-thumbnail"
+                      src="img/admin/withdrawRequestView.png"
+                      alt="go to Appearance -> Import Demo Data"
+                    />
+                    <figcaption class="text-center">
+                      By following this screenshot you can see withdraw requested view.
                     </figcaption>
                   </figure>
                 </article>
