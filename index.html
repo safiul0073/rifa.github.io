@@ -93,7 +93,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  href="https://themeforest.net/user/pixelaxis"
+                  href="https://codecanyon.net/user/pixelaxis"
                   target="_blank"
                   class="nav-link dropdown-toggle"
                   >Purchase</a
@@ -101,11 +101,11 @@
               </li>
               <li class="nav-item">
                 <a
-                  href="https://themeforest.net/user/pixelaxis"
+                  href="https://codecanyon.net/user/pixelaxis"
                   target="_blank"
                   class="action_btn btn_small_two"
                 >
-                  Buy More Template
+                  Buy More Script
                   <i class="arrow_right"></i>
                 </a>
               </li>
@@ -545,7 +545,7 @@
                     </li>
                     <li class="nav-item">
                       <a href="#additional" class="nav-link">
-                        <img src="img/side-nav/cog.png" alt="doc-img" />
+                        <img src="img/side-nav/template.png" alt="doc-img" />
                         Additional
                       </a>
                       <ul class="list-unstyled dropdown_nav">
@@ -564,6 +564,12 @@
                         <i class="icon_plus"></i>
                         <i class="icon_minus-06"></i>
                       </span>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#api_docs" class="nav-link">
+                        <img src="img/side-nav/folder.png" alt="doc-img" />
+                        Api Docs
+                      </a>
                     </li>
                     <li class="nav-item">
                       <a href="#template_options" class="nav-link">
@@ -626,15 +632,15 @@
                   <div class="shortcode_title" id="requirements">
                     <h2>Requirements</h2>
                     <p>
-                      We recommend you to install this project on VPS. But you
-                      can do it on cpanel. Our project divided into two parts -
+                      We recommend you to install this project on VPS or Rifa Admin on cpanel and frontend on varcel. But you
+                      can do admin and frontend it on cpanel or any managed server (We don't recommend because of quite hard to upload). Our project divided into two parts -
                       Frontend and Backend. So for this project you need to have
                       the following requirements on your system.
                     </p>
                     <ul>
-                      <li>PHP 8.3 ^</li>
-                      <li>NodeJS 20 ^</li>
-                      <li>Mysql</li>
+                      <li>PHP 8.3 ^ (recommended 8.3)</li>
+                      <li>MySQL 8.0 ^ or MariaDB 10.6 ^</li>
+                      <li>NodeJS 20 ^ (recommended 22)</li>
                       <li>Composer</li>
                       <li>Intl PHP Extension</li>
                       <li>Curl PHP Extension</li>
@@ -647,12 +653,29 @@
                       <li>Pdo_mysql PHP Extension</li>
                       <li>Zip PHP Extension</li>
                     </ul>
+
+                    <h6>
+                      VPs requirements
+                    </h6>
+                    <ul>
+                      <li>RAM: 2GB</li>
+                      <li>Disk: 4GB</li>
+                      <li>CPU: 1</li>
+                    </ul>
+                    <h6>
+                      Cpanel requirements
+                    </h6>
+                    <ul>
+                      <li>RAM: 4GB</li>
+                      <li>Disk: 4GB</li>
+                      <li>Cloud Linux (it's recommended when you want to upload admin and frontend, But it's not recommended if just upload admin panel)</li>
+                    </ul>
                   </div>
 
                   <div class="shortcode_title" id="whats_included">
                     <h2>What's Included</h2>
                     <p>
-                      After purchasing Rifa on codecanyone.com with your
+                      After purchasing Rifa on <a href="http://codecanyon.net" target="_blank" rel="noopener noreferrer">Codecanyon</a> with your
                       codecanyone account, go to your download page. You can
                       choose to download Rifa.After extract the package you will
                       find following this files:
@@ -660,14 +683,14 @@
                   </div>
                   <h3 class="c_head load-order-2" id="template-package">
                     You can get the following items after purchasing our
-                    template from Themeforset
+                    template from Codecanyon
                   </h3>
                   <div class="steps-panel">
                     <ul class="ordered-list">
                       <li>
                         <strong>Rifa</strong>
-                        - This is the main Zip file of the project and it
-                        contains all the files. Frontend and Backend.
+                        - This is the main file of the project and it
+                        contains all the files. Frontend, Admin and Deployment.
                       </li>
                       <li>
                         <strong>License</strong>
@@ -961,8 +984,9 @@
                         </li>
                         <li>
                           install php extensions
-                          <pre><code class="language-bash" data-lang="bash">sudo apt install php8.2 php8.2-curl php8.2-fileinfo php8.2-gd php8.2-gettext php8.2-mbstring php8.2-exif php8.2-mysqli php8.2-pdo php8.2-zip -y
-                                                    </code></pre>
+                          <pre><code class="language-bash" data-lang="bash">
+                            sudo apt install php8.3 php8.3-curl php8.3-common php8.3-gd php8.3-mbstring php8.3-mysql php8.3-zip php8.3-xml php8.3-intl php8.3-fpm php8.3-cli -y
+                          </code></pre>
                         </li>
                         <li>
                           Verify installation:
@@ -1300,13 +1324,13 @@
                     <small>
                       If you want to use all the scripts (frontend, admin) on
                       the same server as this tutorial, then we recommend
-                      creating a blank ubuntu-based ( v20.0.4 lts ) server with
-                      at least 2+ CPU cores and 2GB+ memory.
+                      creating a blank ubuntu-based ( v20.0.4 lts or higher ) server with
+                      at least 1+ CPU cores and 2GB+ memory. 
                     </small>
-                    <small>
+                    <strong>
                       Please connect your domain with server . We don't
-                      recommend/support deployment the project via IP .
-                    </small>
+                      recommend/support deployment the project via IP.
+                    </strong>
                     <small>Please follow this video with the documentation, and
                       it'll make the installation process relatively
                       easy.
@@ -1327,7 +1351,7 @@
                       <a href="#vps_setup_manual">manual installation</a>
                     </i>
                     <p>
-                      Before starting, the procedure ensures that NodeJS 20 (the
+                      Before starting, the procedure ensures that NodeJS 22^ (the
                       latest) is installed on your computer.
                     </p>
                     <pre><code class="language-bash">npm i -g yarn zx</code></pre>
@@ -1584,7 +1608,7 @@
                     <pre><code class="language-bash">sudo apt install mysql-server</code></pre>
                     <h6>Step 5: Install PHP &amp; Composer</h6>
                     <pre><code class="language-bash">
-                                            sudo apt install php8.2 php8.2-curl php8.2-fileinfo php8.2-gd php8.2-gettext php8.2-mbstring php8.2-exif php8.2-mysqli php8.2-pdo php8.2-zip -y
+                                            sudo apt install php8.3 php8.3-curl php8.3-fileinfo php8.3-gd php8.3-gettext php8.3-mbstring php8.3-exif php8.3-mysqli php8.3-pdo php8.3-zip -y
                                             php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
                                             php -r "if (hash_file('sha384', 'composer-setup.php') ===
                                             'e21205b207c3ff031906575712edab6f13eb0b361f2085f1f1237b7126d785e826a450292b6cfd1d
@@ -1681,7 +1705,7 @@
                                                 location ~ \.php$ {include fastcgi_params;
                                                 fastcgi_param SCRIPT_FILENAME $request_filename;
                                                 fastcgi_pass
-                                                unix:/run/php/php8.2-fpm.sock;
+                                                unix:/run/php/php8.3-fpm.sock;
                                                 }
                                                 }
                                                 location @admin {
@@ -1699,7 +1723,7 @@
                                                 
                                                 error_page 404 /index.php;
                                                 location ~ \.php$ {
-                                                fastcgi_pass unix:/var/run/php/php8.2-fpm.sock;
+                                                fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
                                                 fastcgi_index index.php;
                                                 fastcgi_param SCRIPT_FILENAME
                                                 $realpath_root$fastcgi_script_name;
@@ -2155,7 +2179,7 @@
                     <ul>
                       <li>Server ram at least 4GB</li>
                       <li>Server disk at least 4GB</li>
-                      <li>PHP version 8.2 ^</li>
+                      <li>PHP version 8.3 ^</li>
                       <li>NodeJS 20 ^</li>
                     </ul>
                     <h6>Step 1: Login your Cpanel</h6>
@@ -2937,7 +2961,8 @@
                     <ol>
                       <li>Update the <code>.env</code> file:
                         <pre><code class="language-bash">
-                          CACHE_DRIVER=redis
+                          CACHE_STORE=redis
+                          REDIS_CLIENT=predis
                           REDIS_HOST=127.0.0.1
                           REDIS_PASSWORD=YourStrongPassword
                           REDIS_PORT=6379
@@ -3018,7 +3043,7 @@
                   
                     <h3>Prerequisites</h3>
                     <ul>
-                      <li>PHP 8.2 or higher. (recommended 8.3)</li>
+                      <li>PHP 8.3 or higher. (recommended 8.3)</li>
                       <li>Composer installed on your system.</li>
                       <li>A Laravel application set up.</li>
                     </ul>
@@ -3061,6 +3086,25 @@
                       <li><strong>Run the Server:</strong>
                         <pre><code class="language-bash">php artisan octane:start</code></pre>
                       </li>
+                      <p><strong>Importent:</strong> If you getting error on <code>octane:start</code>  such as extension not found. you need to install Swoole or Roadrunner</p>
+                      <p>For Swoole: <pre ><code class="language-bash">
+                        # Install Swoole as PHP extension
+                        sudo apt install php8.3-swoole
+                        # Verify Swoole is loaded
+                        php -m | grep swoole
+                      </code></pre></p>
+                      <p>
+                        For RoadRunner: <pre><code class="language-bash">
+                          # Install RoadRunner as PHP extension
+                          wget https://github.com/roadrunner-server/roadrunner/releases/latest/download/roadrunner-linux-amd64 -O roadrunner
+                          # make it executable
+                          chmod +x roadrunner
+                          sudo mv roadrunner /usr/local/bin/roadrunner
+                          # Verify RoadRunner is loaded
+                          roadrunner --version
+
+                        </code></pre>
+                      </p>
                       <li><strong>Run with HTTPS (Optional):</strong>
                         <pre><code class="language-bash">php artisan octane:start --https</code></pre>
                       </li>
@@ -3074,6 +3118,7 @@
                       <li>Use Laravel Telescope for debugging requests.</li>
                       <li>Monitor server logs for performance insights.</li>
                     </ul>
+                    <p>You can access it on <code>YOUR_ADMIN_URL/telescope</code> Example: <code>http://localhost/telescope</code></p>
                   
                     <h3>Additional Notes</h3>
                     <ul>
@@ -4253,7 +4298,10 @@
                 >
                   <div class="shortcode_title">
                     <h2>Support Ticket</h2>
-                    <p>you can manage support ticket by following screenshot</p>
+                    <p>
+                      you can see support ticket list. When an user/customer went to contact with you then he/she need to create a ticket. He/She can 
+                      add multile file in that ticket.
+                    </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -4276,6 +4324,10 @@
                       ticket List
                     </figcaption>
                   </figure>
+                  <p>
+                    As you can see in the screenshot you can see support ticket view and you can send message to a support ticket as response 
+                    from you to customer according to his request.
+                  </p>
                   <figure>
                     <img
                       class="w-100 img-thumbnail"
@@ -4294,7 +4346,10 @@
                 >
                   <div class="shortcode_title">
                     <h2>Users</h2>
-                    <p>you manage user account by following screenshot</p>
+                    <p>
+                      As you can see users list and manage users by following screenshot.
+                      You can see any user details and can update any user details also can send Message to user via email or sms.
+                    </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -4317,6 +4372,10 @@
                       By following this screenshot you can see total user List
                     </figcaption>
                   </figure>
+                  <p>
+                    In this user details view you can see user details such as Total balance, Total Deposits Amount, Total Withdrawals Amount
+                    and Total Commission Amount etc. You add or subtract balance to a user also can deactive an user account.
+                  </p>
                   <figure>
                     <img
                       class="w-100 img-thumbnail"
@@ -4328,6 +4387,9 @@
                       some actions
                     </figcaption>
                   </figure>
+                  <p>
+                    Update the user details like First Name, Last Name, Email, Phone Number, Address, Date or birth, language, time zone also can verify email/phone.
+                  </p>
                   <figure>
                     <img
                       class="w-100 img-thumbnail"
@@ -4348,7 +4410,8 @@
                     <h2>Customer Notification</h2>
                     <p>
                       you can send notification to multiple users by following
-                      screenshot
+                      screenshot. You can send notification to an user by email or phone. At first select channel email or phone. Then select 
+                      Notification Template or write your own message.
                     </p>
                   </div>
                   <div class="steps-panel">
@@ -4376,8 +4439,12 @@
                 </article>
                 <article class="documentation_body doc-section" id="admin_role">
                   <div class="shortcode_title">
-                    <h2>Roles</h2>
-                    <p>you manage admin roles by following screenshot</p>
+                    <h2>Admin Roles</h2>
+                    <p>
+                      You can create a new admin role and manage admin roles by following screenshot. Every role has give it permission to do any action. 
+                      Such as an admin is a super admin then he can do anything, so you can create a super admin role and give it all permission. Another Example 
+                      Editor role can only edit and publish content. He can not delete any content also he can not see admin management manu also can not access admin mamange page.
+                    </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -4411,6 +4478,9 @@
                       By following this screenshot you can create a new role
                     </figcaption>
                   </figure>
+                  <p>
+                    As you can see has some primary role like Read, Create, Edit, Delete. You can update any role by following screenshot.
+                  </p>
                   <figure>
                     <img
                       class="w-100 img-thumbnail"
@@ -4428,7 +4498,9 @@
                 >
                   <div class="shortcode_title">
                     <h2>Admins</h2>
-                    <p>you manage admins by following screenshot</p>
+                    <p>
+                      You can create or update an admin by following screenshot.
+                    </p>
                   </div>
                   <div class="steps-panel">
                     <ol class="ordered-list">
@@ -4451,6 +4523,15 @@
                       By following this screenshot you can see total admin list
                     </figcaption>
                   </figure>
+                  <ul>
+                    <li>First Name (Required)</li>
+                    <li>Last Name (Required)</li>
+                    <li>Email (Required)</li>
+                    <li>Phone (Required)</li>
+                    <li>Role (Required)</li>
+                    <li>Password (Required)</li>
+                    <li>Status (Required)</li>
+                  </ul>
                   <figure>
                     <img
                       class="w-100 img-thumbnail"
@@ -5560,6 +5641,44 @@
                         information
                     </figure>
                   </div>
+                </article>
+                <article id="api_docs" class="documentation_body doc-section">
+                  <div class="shortcode_title">
+                    <h2 class="load-order-2">API Documentation</h2>
+                    <p>
+                      You can see frontend API Documentation by following <a href="https://rifa.pixelaxis.com/api-docs" target="_blank" rel="noopener noreferrer">
+                        this
+                      </a>
+                      This is a swgger API Documentation powred by <a href="https://swagger.io/" target="_blank" rel="noopener noreferrer">Swagger</a>
+                    </p>
+                    <p>
+                      You can access it when admin served on local or Live. You just use like <code>YOUR_ADMIN_URL/api-docs</code>.
+                      Example: <code>https://rifa.pixelaxis.com/api-docs</code>
+                    </p>
+                  </div>
+                  <div class="steps-panel">
+                    <ol class="ordered-list">
+                      <li>
+                        From The Admin Root Go To
+                        <span class="direction_steps">
+                          <span class="direction_step">api-docs</span>
+                        </span>
+                      </li>
+                    </ol>
+                  </div>
+                  <figure>
+                    <img
+                      class="w-100 img-thumbnail"
+                      src="img/admin/api-docs.png"
+                      alt="go to Appearance -> Import Demo Data"
+                    />
+                    <figcaption class="text-center">
+                      By following this screenshot you can see API Documentation
+                  </figure>
+                  <p>
+                    Also You can get API'S from <strong>admin</strong> on root named is <code>rifa-frontend-api's.json</code>. 
+                    you just import it on postman or any other API client. 
+                  </p>
                 </article>
                 <article class="documentation_body doc-section" id="change-log">
                   <div class="shortcode_title">
