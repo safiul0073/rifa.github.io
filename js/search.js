@@ -10,7 +10,7 @@ const docsTopics = [
         url: "#whats_included",
     },
     {
-        title: "Gateways",
+        title: "Payment Gateways",
         url: "#payment_gateways",
     },
     {
