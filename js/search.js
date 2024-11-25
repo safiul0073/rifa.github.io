@@ -3,279 +3,315 @@
 const docsTopics = [
     {
         title: "Requirements",
-        url: "#requirements"
+        url: "#requirements",
     },
     {
         title: "What's Included",
-        url: "#whats_included"
+        url: "#whats_included",
+    },
+    {
+        title: "Gateways",
+        url: "#payment_gateways",
+    },
+    {
+        title: "Stripe",
+        url: "#stripe_gateway",
+    },
+    {
+        title: "PayPal",
+        url: "#paypal_gateway",
+    },
+    {
+        title: "Paystack",
+        url: "#paystack_gateway",
+    },
+    {
+        title: "Flutterwave",
+        url: "#flutterwave_gateway",
+    },
+    {
+        title: "Mollie",
+        url: "#mollie_gateway",
+    },
+    {
+        title: "Skrill",
+        url: "#gateway_skrill"
+    },
+    {
+        title: "Braintree",
+        url: "#gateway_braintree"
     },
     {
         title: "Installation Local Machine (Windows)",
-        url: "#local_machine_setup_windows"
+        url: "#local_machine_setup_windows",
     },
     {
         title: "Installation Local Machine (Linux)",
-        url: "#local_machine_setup_linux"
+        url: "#local_machine_setup_linux",
     },
     {
         title: "Installation Local Machine (Mac)",
-        url: "#local_machine_setup_mac"
+        url: "#local_machine_setup_mac",
     },
     {
         title: "Installation VPS (Automated)",
-        url: "#vps_setup_automated"
+        url: "#vps_setup_automated",
     },
     {
         title: "Installation VPS (Manual)",
-        url: "#vps_setup_manual"
+        url: "#vps_setup_manual",
     },
     {
         title: "Installation VPS (Git)",
-        url: "#vps_setup_git"
+        url: "#vps_setup_git",
     },
     {
         title: "Installation Cpanel Setup",
-        url: "#cpannel_setup"
+        url: "#cpannel_setup",
     },
     {
         title: "Installation Varcel Setup",
-        url: "#varcel"
+        url: "#varcel",
     },
     {
         title: "Dashboard",
-        url: "#dashboard"
+        url: "#dashboard",
     },
     {
         title: "Prize Category",
-        url: "#prize_category"
+        url: "#prize_category",
     },
     {
         title: "Prize",
-        url: "#prize"
+        url: "#prize",
     },
     {
         title: "New Lottery",
-        url: "#new_lottery"
+        url: "#new_lottery",
     },
     {
         title: "All Lottery",
-        url: "#all_lottery"
+        url: "#all_lottery",
     },
     {
         title: "Winner",
-        url: "#winner"
+        url: "#winner",
     },
     {
         title: "Manual Draw",
-        url: "#manual_draw"
+        url: "#manual_draw",
     },
     {
         title: "Blog Category",
-        url: "#blog_category"
+        url: "#blog_category",
     },
     {
         title: "Blog Tag",
-        url: "#blog_tag"
+        url: "#blog_tag",
     },
     {
         title: "Blog",
-        url: "#blog"
+        url: "#blog",
     },
     {
         title: "Subscriber",
-        url: "#subscriber"
+        url: "#subscriber",
     },
     {
         title: "Contact",
-        url: "#contact"
+        url: "#contact",
     },
     {
         title: "Deposit Request",
-        url: "#deposit_requests"
+        url: "#deposit_requests",
     },
     {
         title: "Deposit Approvals",
-        url: "#deposit_approvals"
+        url: "#deposit_approvals",
     },
     {
         title: "Deposit Rejections",
-        url: "#deposit_rejections"
+        url: "#deposit_rejections",
     },
     {
         title: "Deposit All",
-        url: "#deposit_all"
+        url: "#deposit_all",
     },
     {
         title: "Withdraw Request",
-        url: "#withdraw_requests"
+        url: "#withdraw_requests",
     },
     {
         title: "Withdraw Approvals",
-        url: "#withdraw_approvals"
+        url: "#withdraw_approvals",
     },
     {
         title: "Withdraw Rejections",
-        url: "#withdraw_rejections"
+        url: "#withdraw_rejections",
     },
     {
         title: "Withdraw All",
-        url: "#withdraw_all"
+        url: "#withdraw_all",
     },
     {
         title: "FAQ Category",
-        url: "#faq_category"
+        url: "#faq_category",
     },
     {
         title: "FAQ",
-        url: "#faq"
+        url: "#faq",
     },
     {
         title: "Support Ticket",
-        url: "#support_ticket"
+        url: "#support_ticket",
     },
     {
         title: "Users",
-        url: "#users"
+        url: "#users",
     },
     {
         title: "Send Notification",
-        url: "#send_notification"
+        url: "#send_notification",
     },
     {
         title: "Admin Management",
-        url: "#admin_management"
+        url: "#admin_management",
     },
     {
         title: "Admin Role",
-        url: "#admin_role"
+        url: "#admin_role",
     },
     {
         title: "Admins",
-        url: "#admins"
+        url: "#admins",
     },
     {
         title: "Reports",
-        url: "#reports"
+        url: "#reports",
     },
     {
         title: "Lottery Report",
-        url: "#lottery_report"
+        url: "#lottery_report",
     },
     {
         title: "Ticket Report",
-        url: "#ticket_report"
+        url: "#ticket_report",
     },
     {
         title: "Commission Report",
-        url: "#commission_report"
+        url: "#commission_report",
     },
     {
         title: "Login Log Report",
-        url: "#login_log_report"
+        url: "#login_log_report",
     },
     {
         title: "Settings",
-        url: "#settings"
+        url: "#settings",
     },
     {
         title: "App Settings",
-        url: "#app_settings"
+        url: "#app_settings",
     },
     {
         title: "System Configuration",
-        url: "#system_configuration"
+        url: "#system_configuration",
     },
     {
         title: "SEO Settings",
-        url: "#seo_settings"
+        url: "#seo_settings",
     },
     {
         title: "Currencies",
-        url: "#currencies"
+        url: "#currencies",
     },
     {
         title: "Withdraw Method",
-        url: "#withraw_method"
+        url: "#withraw_method",
     },
     {
         title: "Payment Method",
-        url: "#payemnt_method"
+        url: "#payemnt_method",
     },
     {
         title: "Languages",
-        url: "#languages"
+        url: "#languages",
     },
     {
         title: "Notification Settings",
-        url: "#notification_settings"
+        url: "#notification_settings",
     },
     {
         title: "Notification Template",
-        url: "#notification_template"
+        url: "#notification_template",
     },
     {
         title: "Email Notification",
-        url: "#email_notification"
+        url: "#email_notification",
     },
     {
         title: "SMS Notification",
-        url: "#sms_notification"
+        url: "#sms_notification",
     },
     {
         title: "RealTime Notification Popup",
-        url: "#realtime_notification"
+        url: "#realtime_notification",
     },
     {
         title: "Frontend Pages",
-        url: "#frontend_pages"
+        url: "#frontend_pages",
     },
     {
         title: "Referral Program",
-        url: "#referral_program"
+        url: "#referral_program",
     },
     {
         title: "Extensions",
-        url: "#extensions"
+        url: "#extensions",
     },
     {
         title: "Social Login",
-        url: "#social_login"
+        url: "#social_login",
     },
     {
         title: "Social Links",
-        url: "#social_links"
+        url: "#social_links",
     },
     {
         title: "Cron Jobs",
-        url: "#cron_jobs"
+        url: "#cron_jobs",
     },
     {
         title: "Cookies Policy",
-        url: "#cookies_policy"
+        url: "#cookies_policy",
     },
     {
         title: "Additional Pages",
-        url: "#additional"
+        url: "#additional",
     },
     {
         title: "Cache",
-        url: "#additional_cache"
+        url: "#additional_cache",
     },
     {
         title: "Server",
-        url: "#additional_server"
+        url: "#additional_server",
     },
     {
         title: "Cache Server Setup",
-        url: "#cache_server"
+        url: "#cache_server",
     },
     {
         title: "Octane Server Setup",
-        url: "#octane_server"
+        url: "#octane_server",
     },
     {
         title: "CI/CD with GitHub Actions and Laravel Envoy",
-        url: "#ci_cd_deployment"
+        url: "#ci_cd_deployment",
+    },
+    {
+        title: "Folder Structure",
+        url: "#folder_structure",
     },
 ];
 

@@ -143,6 +143,11 @@
                             >What's Included</a
                           >
                         </li>
+                        <li class="nav-item">
+                          <a href="#folder_structure" class="nav-link"
+                            >Folder Structure</a
+                          >
+                        </li>
                       </ul>
                       <span class="icon">
                         <i class="icon_plus"></i>
@@ -208,7 +213,7 @@
                           width="40"
                           alt=""
                         />
-                        Extra Server Setup(Optional)
+                        Extra Setup (Optional for VPS)
                       </a>
                       <ul class="list-unstyled dropdown_nav">
                         <li class="nav-item">
@@ -233,12 +238,54 @@
                       </span>
                     </li>
                     <li class="nav-item">
+                      <a href="#project_initial_setup" class="nav-link">
+                        <img src="img/side-nav/document2.png" alt="doc-img" />
+                        Project Initial Setup
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#payment_gateways" class="nav-link">
+                        <img src="img/side-nav/briefcase.png" alt="doc-img" />
+                        Payment Gateways
+                      </a>
+                      <ul class="list-unstyled dropdown_nav">
+                        <li class="nav-item">
+                          <a href="#stripe_gateway" class="nav-link"
+                            >Stripe</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#paypal_gateway" class="nav-link"
+                            >PayPal</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a href="#flutterwave_gateway" class="nav-link">Flutterwave</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#mollie_gateway" class="nav-link">Mollie</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#paystack_gateway" class="nav-link">Paystack</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#gateway_skrill" class="nav-link">Skrill</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="#gateway_braintree">Braintree</a>
+                        </li>
+                      </ul>
+                      <span class="icon">
+                        <i class="icon_plus"></i>
+                        <i class="icon_minus-06"></i>
+                      </span>
+                    </li>
+                    <li class="nav-item">
                       <a href="#dashboard" class="nav-link">
                         <img src="img/side-nav/dashboard.png" alt="doc-img" />
                         Dashboard
                       </a>
                     </li>
-
                     <li class="nav-item">
                       <a href="#lottery_management" class="nav-link">
                         <img src="img/side-nav/lottery.png" alt="doc-img" />
@@ -625,8 +672,8 @@
                       and
                       <strong>Laravel + Vuejs as backend</strong>
                       It's fully responsive and well tested also fully
-                      functional. It can be easily customized. We create API'S
-                      for frontend and Admin panel we used Inertiajs.
+                      functional. It can be easily customized. We created API'S
+                      for frontend using Next.js and Admin panel we used Larave and Inertiajs.
                     </p>
                   </div>
                   <div class="shortcode_title" id="requirements">
@@ -703,6 +750,97 @@
                       </li>
                     </ul>
                   </div>
+                </article>
+                <article class="shortcode_title" id="folder_structure">
+                  <h2>Folder Structure</h2>
+                  <h6>Rifa Package</h6>
+                  <ul class="folder-structure">
+                    <li class="folder">
+                      documentation
+                      <ul>
+                        <li class="folder">assets</li>
+                        <li class="folder">css</li>
+                        <li class="folder">img</li>
+                        <li class="folder">js</li>
+                        <li class="folder">scss</li>
+                        <li class="file">index.html</li>
+                      </ul>
+                    </li>
+                    <li class="folder">rifa 
+                      <ul>
+                        <li class="folder">admin
+                          <ul>
+                              <li class="folder">app</li>
+                              <li class="folder">bootstrap</li>
+                              <li class="folder">config</li>
+                              <li class="folder">database</li>
+                              <li class="folder">public</li>
+                              <li class="folder">resources</li>
+                              <li class="folder">routes</li>
+                              <li class="folder">storage</li>
+                              <li class="folder">tests</li>
+                              <li class="folder">vendor</li>
+                              <li class="file">artisan</li>
+                              <li class="file">composer.json</li>
+                              <li class="file">composer.lock</li>
+                              <li class="file">Envoy.blade.php</li>
+                              <li class="file">package.json</li>
+                              <li class="file">package-lock.json</li>
+                              <li class="file">phpunit.xml</li>
+                              <li class="file">postcss.config.js</li>
+                              <li class="file">readme.md</li>
+                              <li class="file">rifa-frontend-postman-apis.json</li>
+                              <li class="file">tailwind.config.js</li>
+                              <li class="file">tsconfig.json</li>
+                              <li class="file">tsconfig.node.json</li>
+                              <li class="file">vite.config.js</li>
+                              <li class="file">.editorconfig</li>
+                              <li class="file">.env.example</li>
+                              <li class="file">.gitattributes</li>
+                              <li class="file">.gitignore</li>
+                              <li class="file">.htaccess</li>
+                              <li class="file">.prettierrc</li>
+                          </ul>
+                      </li>
+                      <li class="folder">deployment
+                          <ul>
+                              <li class="file">backendbuildscript.mjs</li>
+                              <li class="file">deployment.sh</li>
+                              <li class="file">frontendbuildscript.mjs</li>
+                              <li class="file">nodesetup.sh</li>
+                              <li class="file">README.md</li>
+                              <li class="file">rebuildFrontend.mjs</li>
+                              <li class="file">redeployment.sh</li>
+                              <li class="file">setenv.mjs</li>
+                          </ul>
+                      </li>
+                      <li class="folder">frontend
+                          <ul>
+                              <li class="folder">app</li>
+                              <li class="folder">components</li>
+                              <li class="folder">configs</li>
+                              <li class="folder">data</li>
+                              <li class="folder">hooks</li>
+                              <li class="folder">providers</li>
+                              <li class="folder">public</li>
+                              <li class="folder">styles</li>
+                              <li class="folder">utils</li>
+                              <li class="folder">.husky</li>
+                              <li class="file">jsconfig.json</li>
+                              <li class="file">middleware.js</li>
+                              <li class="file">next.config.mjs</li>
+                              <li class="file">next-env.d.ts</li>
+                              <li class="file">package.json</li>
+                              <li class="file">package.json</li>
+                              <li class="file">varcel.json</li>
+                              <li class="file">.env.example</li>
+                              <li class="file">.eslintrc.json</li>
+                              <li class="file">gitignore</li>
+                          </ul>
+                      </li>
+                      </ul>
+                    </li>
+                </ul>
                 </article>
                 <article
                   class="pt-0 documentation_body doc-section"
@@ -2487,30 +2625,30 @@
                     <pre><code class="language-bash">nano server.js</code></pre>
                     <p>Add this code to that file</p>
                     <pre>
-                                            <code class="language-bash">
-                                            import { createServer } from 'http'
-                                            import { parse } from 'url'
-                                            import next from 'next'
-                                            
-                                            const port = parseInt(process.env.PORT || '3000', 10)
-                                            const dev = process.env.NODE_ENV !== 'production'
-                                            const app = next({ dev })
-                                            const handle = app.getRequestHandler()
-                                            
-                                            app.prepare().then(() =&gt; {
-                                            createServer((req, res) =&gt; {
-                                                const parsedUrl = parse(req.url, true)
-                                                handle(req, res, parsedUrl)
-                                            }).listen(port)
-                                            
-                                            console.log(
-                                                `&gt; Server listening at http://localhost:${port} as ${
-                                                dev ? 'development' : process.env.NODE_ENV
-                                                }`
-                                            )
-                                            })
-                                            </code>
-                                        </pre>
+                        <code class="language-bash">
+                        import { createServer } from 'http'
+                        import { parse } from 'url'
+                        import next from 'next'
+                        
+                        const port = parseInt(process.env.PORT || '3000', 10)
+                        const dev = process.env.NODE_ENV !== 'production'
+                        const app = next({ dev })
+                        const handle = app.getRequestHandler()
+                        
+                        app.prepare().then(() =&gt; {
+                        createServer((req, res) =&gt; {
+                            const parsedUrl = parse(req.url, true)
+                            handle(req, res, parsedUrl)
+                        }).listen(port)
+                        
+                        console.log(
+                            `&gt; Server listening at http://localhost:${port} as ${
+                            dev ? 'development' : process.env.NODE_ENV
+                            }`
+                        )
+                        })
+                        </code>
+                    </pre>
                     <p>Now update package.json for frontend</p>
                     <pre><code class="language-bash">
                                             nano package.json
@@ -2545,14 +2683,14 @@
                     </p>
                     <pre><code class="language-bash">nano .env</code></pre>
                     <pre>
-                                            <code class="language-bash">
-                                                NEXT_PUBLIC_SERVER_URL="https://admin.YOUR_DOMAIN"
+                        <code class="language-bash">
+                            NEXT_PUBLIC_SERVER_URL="https://admin.YOUR_DOMAIN"
 
-                                                NEXT_PUBLIC_BASE_URL="https://YOUR_DOMAIN"
+                            NEXT_PUBLIC_BASE_URL="https://YOUR_DOMAIN"
 
-                                                NEXT_PUBLIC_TOKEN_NAME="TOKEN_NAME"
-                                            </code>
-                                        </pre>
+                            NEXT_PUBLIC_TOKEN_NAME="TOKEN_NAME"
+                        </code>
+                    </pre>
                     <figure>
                       <img
                         class="w-100 img-thumbnail"
@@ -2871,6 +3009,10 @@
 
                               <pre><code class="language-bash">vercel --prod</code></pre>
                           </div>
+
+                          <p>Now, You can see deployment complete and showing an URL like production: https://RANDOM_STRING.vercel.app. Click on that URL and you can see your frontend</p>
+                          <P>Now you setup your <code>DOMEAIN</code> in vercel dashboard</P>
+                          <p>Thank you</p>
                         </div>
 
                         <div>
@@ -3381,6 +3523,776 @@
                     </ul>
                   </div>
                   
+                </article>
+                <article class="documentation_body doc-section" id="project_initial_setup">
+                  <div class="shortcode_title">
+                    <h2>Project Initial Setup</h2>
+                    <p>
+                      After successfully completed the installation process you then need to setup the project. It's very importent
+                      to setup the project correctly.
+                    </p>
+                    <h6>Step 1: You go your admin panel.</h6>
+                    <p>
+                      Login to your admin panel and Go to <strong>Settings Menu</strong>
+                    </p>
+                    <h6>Step 2: Go App Setting</h6>
+                    <p>
+                      Setup your application primary information and set your frontend url. 
+                      <strong>Important: </strong> Don't forget to set your frontend url.
+                    </p>
+                    <h6>Step 3: Go System Configuration</h6>
+                    <p>
+                      Setup your system configuration and set your frontend pagination settings.
+                    </p>
+                    <h6>Step 4: Go Email Setting</h6>
+                    <p>
+                      Setup your email information and set your email host and port.
+                    </p>
+                    <h6>Step 5: Go Payment Setting</h6>
+                    <p>
+                      Setup your payment information and set your payment gateway also setup you webhooks url.
+                    </p>
+                    <h6>Step 6: Go Currency Setting</h6>
+                    <p>
+                      You need refresh your currency rate live. <strong>Important: </strong> Don't forget to refresh your currency rate.
+                      Button will found on the top right corner.
+                    </p>
+                    <h6>Step 6: Go Social Login</h6>
+                    <p>
+                      Setup your social login information and set your social login url.
+                    </p>
+                    <h6>Step 7: Go your SEO Setting</h6>
+                    <p>
+                      Setup your SEO information and set your SEO information.
+                    </p>
+
+                    <p>That's it, your initial setup, But can setup more features such as language, Deposit Methods, and more.</p>
+                  </div>
+                </article>
+                <article class="documentation_body doc-section" id="payment_gateways">
+                  <div class="shortcode_title" id="stripe_gateway">
+                    <h1>Payment Gateways - Stripe</h1>
+                    <h3><strong>1. Sign Up or Log In</strong></h3>
+                    <ol>
+                        <li>Go to <a rel="noopener" target="_new" href="https://stripe.com/">Stripe</a> and log in or create an account.</li>
+                        <li>After logging in, you&apos;ll be directed to the dashboard.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>2. Activate Your Account</strong></h3>
+                    <ol>
+                        <li>On the dashboard, look for the <strong>Activate Your Account</strong> banner if not already done.</li>
+                        <li>Fill out the required business information, including:<ul>
+                                <li>Business name</li>
+                                <li>Business type (e.g., individual or company)</li>
+                                <li>Tax ID (if required for your region)</li>
+                                <li>Bank account for payouts</li>
+                                <li>Email and phone verification</li>
+                            </ul>
+                        </li>
+                        <li>Submit the form and wait for approval (if applicable).</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>3. Switch to Live Mode</strong></h3>
+                    <ol>
+                        <li>Toggle the &quot;Test Mode&quot; switch in the dashboard to enter <strong>Live Mode</strong>.</li>
+                        <li>This enables you to process real transactions.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>4. Get Your API Keys</strong></h3>
+                    <ol>
+                        <li>Navigate to <strong>Developers</strong> &gt; <strong>API Keys</strong> in the left menu.</li>
+                        <li>Copy the following keys:<ul>
+                                <li><strong>Publishable Key</strong>: Used in the frontend for payment interactions.</li>
+                                <li><strong>Secret Key</strong>: Used in the backend for secure server-side operations.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Store these keys securely</strong>&mdash;you&rsquo;ll use them in your server or application.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>5. Set Up Webhooks</strong></h3>
+                    <ol>
+                        <li>Navigate to <strong>Developers</strong> &gt; <strong>Webhooks</strong> in the left menu.</li>
+                        <li>Click <strong>Add Endpoint</strong>.</li>
+                        <li>Provide the following details:<ul>
+                                <li><strong>Endpoint URL</strong>: Enter your server&rsquo;s webhook listener URL (e.g., <code>https://yourwebsite.com/webhooks/stripe</code>).</li>
+                                <li><strong>Description</strong>: Optional, add a name for reference (e.g., &quot;Payment Notifications&quot;).</li>
+                                <li><strong>Version</strong>: Ensure it matches the API version you are using.</li>
+                                <li><strong>Events to Send</strong>: Select the events you want Stripe to notify you about (e.g., <code>payment_intent.succeeded</code>, <code>payment_intent.failed</code>).</li>
+                            </ul>
+                        </li>
+                        <li>Save the endpoint.</li>
+                        <li>After creating the endpoint, Stripe will display a <strong>Webhook Signing Secret</strong>:<ul>
+                                <li>Copy this secret key&mdash;it ensures webhook requests to your server are secure.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/stripe1.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see stripe setup
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/stripe2.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see stripe setup
+                      </figcaption>
+                    </figure>
+                    <hr>
+                    <h3><strong>6. Test the Integration</strong></h3>
+                    <ol>
+                        <li>To test webhooks, you can use the <strong>Stripe CLI</strong>or manual testing:<ul>
+                                <li><strong>Stripe CLI</strong>: Run <code>stripe listen --forward-to https://your-webhook-url</code>.</li>
+                                <li>Perform a test transaction, and Stripe will send webhook events to your endpoint.</li>
+                            </ul>
+                        </li>
+                        <li>Ensure the webhook events are received and processed correctly.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>7. Configure Other Settings</strong></h3>
+                    <ol>
+                        <li><strong>Payouts</strong>:<ul>
+                                <li>Go to <strong>Settings</strong> &gt; <strong>Payouts and Scheduling</strong>.</li>
+                                <li>Set up your payout frequency (daily, weekly, or monthly).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Email Notifications</strong>:<ul>
+                                <li>Go to <strong>Settings</strong> &gt; <strong>Email Preferences</strong>.</li>
+                                <li>Enable or disable email notifications for failed payments, disputes, etc.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h3><strong>8. Go Live</strong></h3>
+                    <ol>
+                        <li>Ensure you are in <strong>Live Mode</strong> by verifying the &quot;Test Mode&quot; toggle is disabled.</li>
+                        <li>Update your application with the <strong>Live Keys</strong> (Publishable and Secret).</li>
+                        <li>Perform a real transaction to ensure everything works as expected.</li>
+                    </ol>
+                    <hr>
+                    <p>This guide ensures your Stripe account is fully configured and ready for production use</p>
+                  </div>
+                  <div class="shortcode_title" id="paypal_gateway">
+                    <h1>Payment Gateways - PayPal</h1>
+                    <h3><strong>1. Sign Up or Log In to PayPal</strong></h3>
+                      <ol>
+                          <li>Go to <a rel="noopener" target="_new">PayPal&nbsp;Developer</a> and log in to your PayPal account, or sign up for one.</li>
+                          <li>Once logged in, you&rsquo;ll be redirected to the PayPal Developer Dashboard.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>2. Create a PayPal App for API Credentials</strong></h3>
+                      <ol>
+                          <li>On the PayPal Developer Dashboard, go to <strong>My Apps &amp; Credentials</strong>.</li>
+                          <li>Under the <strong>REST API apps</strong> section, click <strong>Create App</strong>.</li>
+                          <li>Name your app (e.g., &quot;My Production App&quot;) and select the relevant account (Personal or Business).</li>
+                          <li>Click <strong>Create App</strong>.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>3. Get Your API Credentials</strong></h3>
+                      <p>After creating your app, PayPal will provide the following:</p>
+                      <ul>
+                          <li><strong>Client ID</strong>: Public key used in the frontend.</li>
+                          <li><strong>Secret Key</strong>: Private key used in the backend.</li>
+                          <li><strong>Staging &amp; Live Modes</strong>: You will start in <strong>Staging Mode</strong> for testing, then you can switch to <strong>Live Mode</strong> for real transactions.</li>
+                      </ul>
+                      <p>All the credentials copy and paste on your application Admin Pannel Settings > Payment method > PayPal</p>
+                      <p>To get your credentials:</p>
+                      <ol>
+                          <li>Navigate to the <strong>Live</strong> toggle to switch to production.</li>
+                          <li><strong>Copy</strong> the <strong>Client ID</strong> and <strong>Secret Key</strong> from the dashboard.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>4. Set Up Webhooks</strong></h3>
+                      <ol>
+                          <li>In the <strong>My Apps &amp; Credentials</strong> section, under your app, click <strong>Manage Webhooks</strong>.</li>
+                          <li>Click <strong>Add Webhook</strong>.</li>
+                          <li>Enter your <strong>Webhook URL</strong>. This is the URL on your server where PayPal will send event notifications (e.g., <code>https://yourwebsite.com/webhooks/paypal</code> you can get this on your admin pannel of your website).</li>
+                          <li>Under <strong>Event Types</strong>, select the events you want to receive notifications for (e.g., <code>PAYMENT.SALE.COMPLETED</code>, <code>PAYMENT.SALE.DENIED</code>).</li>
+                          <li>Click <strong>Save</strong> to confirm the webhook.</li>
+                      </ol>
+                      <p>Once saved, PayPal will provide you with a <strong>Webhook ID</strong> and a <strong>Webhook Signing Certificate</strong> (used to verify that the event data is genuinely coming from PayPal).</p>
+                      <hr>
+                      <figure>
+                        <img
+                          class="w-100 img-thumbnail"
+                          src="img/Gateway/paypal.png"
+                          alt="go to Appearance -> Import Demo Data"
+                        />
+                        <figcaption class="text-center">
+                          By following this screenshot you can see paypal setup
+                        </figcaption>
+                      </figure>
+                      <figure>
+                        <img
+                          class="w-100 img-thumbnail"
+                          src="img/Gateway/paypal2.png"
+                          alt="go to Appearance -> Import Demo Data"
+                        />
+                        <figcaption class="text-center">
+                          By following this screenshot you can see paypal setup
+                        </figcaption>
+                      </figure>
+                      <hr>
+                      <h3><strong>5. Test the Integration</strong></h3>
+                      <ol>
+                          <li>While in <strong>Sandbox Mode</strong>, you can test the integration with PayPal using the sandbox credentials.</li>
+                          <li>Test various payment flows (e.g., successful payments, failed payments).</li>
+                          <li>Use the <strong>PayPal Sandbox</strong> account to make test purchases.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>6. Switch to Live Mode</strong></h3>
+                      <ol>
+                          <li>After successful testing, switch to <strong>Live Mode</strong> in PayPal&apos;s <strong>My Apps &amp; Credentials</strong> section.</li>
+                          <li>Update your application with your <strong>Live Client ID</strong> and <strong>Live Secret Key</strong>.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>7. Configure Other Settings</strong></h3>
+                      <ol>
+                          <li><strong>Payouts</strong>: You can manage your payout settings by going to <strong>Payouts</strong> &gt; <strong>Settings</strong> in your PayPal dashboard.</li>
+                          <li><strong>Notifications</strong>: Under <strong>Notifications</strong>, enable or customize notifications for payment statuses, disputes, etc.</li>
+                          <li><strong>Billing and Subscription Plans</strong>: If you are offering subscriptions, configure recurring billing through <strong>PayPal Subscriptions</strong>.</li>
+                      </ol>
+                      <hr>
+                      <h3><strong>8. Go Live</strong></h3>
+                      <p>Once everything is configured in <strong>Live Mode</strong> and tested:</p>
+                      <ol>
+                          <li><strong>Verify</strong> that you&rsquo;re using the correct <strong>Live API credentials</strong> in your app.</li>
+                          <li><strong>Make real transactions</strong> to ensure the system works smoothly in production.</li>
+                      </ol>
+                      <hr>
+                      <p>By following this guide, you&apos;ll have PayPal configured and ready to process real payments in your production environment!</p>
+                  </div>
+                  <div class="shortcode_title" id="flutterwave_gateway">
+                    <h3><strong>Payment Gateways - Flutterwave</strong></h3>
+                    <h4><strong>1. Sign Up or Log In to Flutterwave</strong></h4>
+                    <ol>
+                        <li><strong>Go to the Flutterwave website</strong>: Visit <a rel="noopener" target="_new" href="https://www.flutterwave.com/">Flutterwave</a> and either sign up for an account or log in to an existing account.</li>
+                        <li>Once logged in, you&rsquo;ll be directed to the <strong>Flutterwave Dashboard</strong>.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>2. Access API Keys</strong></h4>
+                    <ol>
+                        <li>From the <strong>Flutterwave Dashboard</strong>, navigate to <strong>Settings</strong> &gt; <strong>API Keys</strong>.</li>
+                        <li>You will see two API keys:<ul>
+                                <li><strong>Live API Key</strong>: Used for live (production) transactions.</li>
+                                <li><strong>Test API Key</strong>: Used for sandbox (testing) transactions.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Copy</strong> the <strong>Live API Key</strong> (for real transactions) and <strong>Test API Key</strong> (for testing).</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>3. Set Up Webhooks</strong></h4>
+                    <ol>
+                        <li>In the <strong>Flutterwave Dashboard</strong>, go to <strong>Settings</strong> &gt; <strong>Webhooks</strong>.</li>
+                        <li><strong>Click on &quot;Add Webhook&quot;</strong>.</li>
+                        <li>Enter the <strong>Webhook URL</strong>. This is the URL on your admin panel that will receive payment status updates from Flutterwave (e.g., <code>https://yourwebsite.com/webhooks/flutterwave</code>).</li>
+                        <li>Select the events you want to be notified about (e.g., <code>payment.success</code>, <code>payment.failed</code>, <code>payment.cancelled</code>).</li>
+                        <li><strong>Save</strong> the webhook.</li>
+                    </ol>
+                    <p><strong>Note:</strong> After saving, Flutterwave will generate a <strong>Webhook Secret Key</strong>. This key will be used to verify the authenticity of incoming webhook events.</p>
+                    <hr>
+                    <h4><strong>4. Add Your API Keys and Webhook URL to Admin Panel</strong></h4>
+                    <ol>
+                        <li>
+                            <p><strong>Log in to your Admin Panel</strong>: Navigate to the section where you manage payment gateways.</p>
+                        </li>
+                        <li>
+                            <p><strong>Add Payment Gateway Information</strong>:</p>
+                            <ul>
+                                <li><strong>API Key</strong>: Input the <strong>Live API Key</strong> (for production) or <strong>Test API Key</strong> (for testing).</li>
+                                <li><strong>Webhook URL</strong>: Enter the URL where you want to receive webhook notifications (e.g., <code>https://yourwebsite.com/webhooks/flutterwave</code>).</li>
+                                <li><strong>Webhook Secret</strong>: If required, input the <strong>Webhook Secret Key</strong> you received from the Flutterwave dashboard.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/flutterwave1.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see flutterwave setup
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/flutterwave2.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see flutterwave setup
+                      </figcaption>
+                    </figure>
+                    <hr>
+                    <h4><strong>5. Configure Payment Options</strong></h4>
+                    <p>In the <strong>Admin Panel</strong>, ensure that:</p>
+                    <ul>
+                        <li><strong>Flutterwave</strong> is enabled as a payment gateway option.</li>
+                        <li>You can add additional options such as payment method types (e.g., cards, bank transfers), and specify any payment terms if needed.</li>
+                    </ul>
+                    <hr>
+                    <h4><strong>6. Testing the Payment Setup</strong></h4>
+                    <ol>
+                        <li><strong>Switch to Sandbox Mode</strong>: In the Flutterwave Dashboard, switch the API key to <strong>Test Key</strong>.</li>
+                        <li>Perform a test transaction from your frontend (e.g., your website or mobile app) to simulate a payment process.</li>
+                        <li>Ensure that webhook notifications for successful, failed, or cancelled payments are received correctly at the <strong>Webhook URL</strong> you provided.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>7. Switching to Live Mode</strong></h4>
+                    <ol>
+                        <li>Once you&rsquo;ve tested your integration successfully in sandbox mode, <strong>switch to Live Mode</strong> in the <strong>Flutterwave Dashboard</strong>.</li>
+                        <li>Replace the <strong>Test API Key</strong> with the <strong>Live API Key</strong> in your admin panel.</li>
+                        <li><strong>Save</strong> the changes and you&rsquo;re ready to start processing real payments.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>Additional Configuration (Optional)</strong></h3>
+                    <ul>
+                        <li><strong>Set Up Email Notifications</strong>: You may want to enable email notifications in your admin panel for payment status updates (successful, failed, etc.).</li>
+                        <li><strong>Currency and Country</strong>: Ensure that your admin panel is configured for the correct country and currency for your Flutterwave account.</li>
+                    </ul>
+                    <hr>
+                    <h3><strong>Final Steps</strong></h3>
+                    <ol>
+                        <li><strong>Go Live</strong>: After switching to the live API key and ensuring everything is set up properly, you can start accepting payments.</li>
+                        <li><strong>Monitor Payments</strong>: Keep track of payments and check for any failed or cancelled transactions in your admin panel.</li>
+                    </ol>
+                    <hr>
+                    <p>This guide will allow <strong>end users</strong> (admins) to set up <strong>Flutterwave</strong> for payments in their admin panel, including entering the necessary API keys, webhook URL, and settings to begin processing transactions.</p>
+                  </div>
+                  <div class="shortcode_title" id="mollie_gateway">
+                    <h3><strong>Payment Gateway - Mollie</strong></h3>
+                    <h4><strong>1. Sign Up or Log In to Mollie</strong></h4>
+                    <ol>
+                        <li><strong>Go to Mollie&rsquo;s website</strong>: Visit <a rel="noopener" target="_new" href="https://www.mollie.com/">Mollie</a> and either create a new account or log in to an existing account.</li>
+                        <li>Once logged in, you&rsquo;ll be taken to the <strong>Mollie Dashboard</strong>.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>2. Access API Keys</strong></h4>
+                    <ol>
+                        <li>In the <strong>Mollie Dashboard</strong>, navigate to <strong>Developers</strong> &gt; <strong>API Keys</strong> in the left sidebar.</li>
+                        <li><strong>Copy your API key</strong>:<ul>
+                                <li><strong>Live API Key</strong>: Used for production transactions (real payments).</li>
+                                <li><strong>Test API Key</strong>: Used for sandbox/testing transactions.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    <p>Make sure to <strong>copy the Live API Key</strong> when you&apos;re ready to accept real payments.</p>
+                    <hr>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/mollie1.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see mollie setup
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/mollie2.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see mollie setup
+                      </figcaption>
+                    </figure>
+                    <hr>
+                    <ol>
+                        <li>
+                            <p><strong>Log in to your Admin Panel</strong>: Go to the section where payment gateways are managed.</p>
+                        </li>
+                        <li>
+                            <p><strong>Configure Mollie</strong>:</p>
+                            <ul>
+                                <li><strong>API Key</strong>: Paste the <strong>Live API Key</strong> from your Mollie account into the corresponding field in your admin panel (use <strong>Test API Key</strong> for sandbox testing).</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>5. Configure Payment Options</strong></h4>
+                    <p>In the <strong>Admin Panel</strong>, ensure that:</p>
+                    <ul>
+                        <li><strong>Mollie</strong> is enabled as a payment option for customers.</li>
+                        <li>Select the <strong>payment methods</strong> you want to offer, such as credit cards, PayPal, iDEAL, and others supported by Mollie.</li>
+                    </ul>
+                    <hr>
+                    <h4><strong>6. Testing the Payment Setup</strong></h4>
+                    <ol>
+                        <li><strong>Switch to Test Mode</strong>: In the Mollie Dashboard, use the <strong>Test API Key</strong> for testing.</li>
+                        <li>Perform a test payment from your website or application to simulate a real payment.</li>
+                        <li><strong>Ensure Webhook Notifications</strong>: Test if your system is receiving webhook notifications from Mollie when a payment is processed (successful, failed, or pending).</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>7. Switching to Live Mode</strong></h4>
+                    <ol>
+                        <li>After successful testing, <strong>switch to Live Mode</strong> in the <strong>Mollie Dashboard</strong>.</li>
+                        <li>Replace the <strong>Test API Key</strong> with the <strong>Live API Key</strong> in your admin panel settings.</li>
+                        <li><strong>Save</strong> the changes to start processing live payments.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>Additional Configuration (Optional)</strong></h3>
+                    <ul>
+                        <li><strong>Email Notifications</strong>: Set up notifications for your team to receive alerts about payment statuses, failures, etc.</li>
+                        <li><strong>Transaction History</strong>: You can access detailed reports about payments, including successful and failed transactions, from the Mollie Dashboard.</li>
+                    </ul>
+                    <hr>
+                    <h3><strong>Final Steps</strong></h3>
+                    <ol>
+                        <li><strong>Go Live</strong>: Once the live API key is in place and everything is tested, your system is ready to accept real payments.</li>
+                        <li><strong>Monitor Transactions</strong>: You can view transaction details and payment statuses directly in your Mollie Dashboard.</li>
+                    </ol>
+                    <hr>
+                    <p>This guide will enable <strong>end users</strong> (admins) to set up <strong>Mollie</strong> as a payment gateway in their admin panel by adding API keys, configuring the webhook URL, and enabling payment methods for production.</p>
+                  </div>
+                  <div class="shortcode_title" id="paystack_gateway">
+                    <h3><strong>Payment Gateway - Paystack</strong></h3>
+                    <h4><strong>1. Sign Up or Log In to Paystack</strong></h4>
+                    <ol>
+                        <li><strong>Go to Paystack&apos;s website</strong>: Visit <a rel="noopener" target="_new" href="https://www.paystack.com/">Paystack</a> and sign up for a new account or log in if you already have one.</li>
+                        <li>Once logged in, you&apos;ll be directed to your <strong>Paystack Dashboard</strong>.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>2. Get API Keys</strong></h4>
+                    <ol>
+                        <li>
+                            <p>In the <strong>Paystack Dashboard</strong>, go to <strong>Settings</strong> &gt; <strong>API Keys &amp; Webhooks</strong>.</p>
+                        </li>
+                        <li>
+                            <p>You will see two API keys:</p>
+                            <ul>
+                                <li><strong>Live Secret Key</strong>: Used for real (live) payments.</li>
+                                <li><strong>Test Secret Key</strong>: Used for testing in the sandbox environment.</li>
+                                <li><strong>Public Key</strong>: Used on the client-side (frontend) for initiating payments.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Copy the Live Secret Key</strong> for production or the <strong>Test Secret Key</strong> for sandbox testing. Keep the keys secure, especially the <strong>Live Secret Key</strong>.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>3. Set Up Webhooks</strong></h4>
+                    <ol>
+                        <li>In the <strong>Paystack Dashboard</strong>, go to <strong>Settings</strong> &gt; <strong>API Keys &amp; Webhooks</strong>.</li>
+                        <li>Scroll down to the <strong>Webhooks</strong> section and click <strong>Add Webhook</strong>.</li>
+                        <li><strong>Enter the Webhook URL</strong>. This URL is the endpoint on your server where Paystack will send payment status updates (e.g., <code>https://yourwebsite.com/webhooks/paystack</code>).</li>
+                        <li>Select the events you want to be notified about, such as:<ul>
+                                <li><strong>charge.success</strong></li>
+                                <li><strong>charge.failed</strong></li>
+                                <li><strong>charge.cancelled</strong></li>
+                                <li><strong>transaction.success</strong></li>
+                                <li><strong>transaction.failed</strong></li>
+                            </ul>
+                        </li>
+                        <li>Click <strong>Save Webhook</strong>.</li>
+                    </ol>
+                    <p>After saving, Paystack will provide a <strong>Webhook Secret</strong> that you will use to verify the authenticity of webhook events. Keep this secret secure.</p>
+                    <hr>
+                    <h4><strong>4. Add API Keys and Webhook URL to Your Admin Panel</strong></h4>
+                    <ol>
+                        <li>
+                            <p><strong>Log in to your Admin Panel</strong>: Navigate to the settings where you manage payment gateways.</p>
+                        </li>
+                        <li>
+                            <p><strong>Configure Paystack</strong>:</p>
+                            <ul>
+                                <li><strong>API Key</strong>: Paste the <strong>Live Secret Key</strong> from your Paystack account (or <strong>Test Secret Key</strong> for sandbox testing).</li>
+                                <li><strong>Webhook URL</strong>: Enter the <strong>Webhook URL</strong> you configured earlier to receive payment status updates.</li>
+                                <li><strong>Webhook Secret</strong>: Paste the <strong>Webhook Secret</strong> provided by Paystack after you created the webhook.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>5. Configure Payment Options</strong></h4>
+                    <p>In the <strong>Admin Panel</strong>, ensure that:</p>
+                    <ul>
+                        <li><strong>Paystack</strong> is enabled as a payment method.</li>
+                        <li>You can configure payment options such as <strong>credit cards</strong>, <strong>bank transfers</strong>, and <strong>mobile payments</strong> (supported by Paystack).</li>
+                    </ul>
+                    <hr>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/paystack1.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see paystack setup
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/paystack2.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see paystack setup
+                      </figcaption>
+                    </figure>
+                    <hr>
+                    <h4><strong>6. Testing the Payment Setup</strong></h4>
+                    <ol>
+                        <li><strong>Switch to Test Mode</strong>: In the Paystack Dashboard, use the <strong>Test Secret Key</strong> to simulate test payments.</li>
+                        <li>Perform a test payment on your site or application using the sandbox environment (Test mode).</li>
+                        <li>Ensure that webhook notifications are received at your <strong>Webhook URL</strong> for payment status updates (e.g., success, failure, or cancellation).</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>7. Switching to Live Mode</strong></h4>
+                    <ol>
+                        <li>After successful testing, <strong>switch to Live Mode</strong> in the <strong>Paystack Dashboard</strong>.</li>
+                        <li>Replace the <strong>Test Secret Key</strong> with the <strong>Live Secret Key</strong> in your admin panel.</li>
+                        <li><strong>Save</strong> the changes, and you are ready to start processing live payments.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>Additional Configuration (Optional)</strong></h3>
+                    <ul>
+                        <li><strong>Email Notifications</strong>: You can set up email notifications for successful payments, failed payments, and chargebacks in the Paystack dashboard.</li>
+                        <li><strong>Currency and Country Settings</strong>: Make sure that Paystack is configured to accept payments in the correct currency and country, depending on your business location.</li>
+                    </ul>
+                    <hr>
+                    <h3><strong>Final Steps</strong></h3>
+                    <ol>
+                        <li><strong>Go Live</strong>: After everything is set up and tested successfully, your system is ready to process real payments.</li>
+                        <li><strong>Monitor Payments</strong>: You can monitor transaction statuses, view reports, and manage payments directly from the Paystack Dashboard.</li>
+                    </ol>
+                    <hr>
+                    <p>This guide will enable to set up <strong>Paystack</strong> in their admin panel, including API keys, webhook URL configuration, and enabling the gateway for live transactions.</p>
+                  </div>
+                  <div class="shortcode_title" id="gateway_skrill">
+                    <h3><strong>Payment Gateway - Skrill</strong></h3>
+                    <h4><strong>1. Sign Up or Log In to Skrill</strong></h4>
+                    <ol>
+                        <li><strong>Go to Skrill&apos;s website</strong>: Visit <a rel="noopener" target="_new" href="https://www.skrill.com/">Skrill</a> and either create a new account or log in to an existing account.</li>
+                        <li>After logging in, you&rsquo;ll be directed to your <strong>Skrill Merchant Account</strong> dashboard.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>2. Merchant Account Email</strong></h4>
+                    <ol>
+                        <li>In the <strong>Skrill Merchant Account Dashboard</strong>, navigate to <strong>Settings</strong> &gt; <strong>API Keys</strong>.</li>
+                        <li>Copy the <strong>Merchant Email</strong> associated with your Skrill account. and paste it in the <strong>Skrill Merchant Email</strong> field.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>3. Set Up Webhooks</strong></h4>
+                    <ol>
+                        <li>
+                            <p>In your <strong>Skrill Merchant Dashboard</strong>, navigate to <strong>Settings</strong> &gt; <strong>Notifications</strong>.</p>
+                        </li>
+                        <li>
+                            <p>Under the <strong>Payment Notification URL</strong>, enter the <strong>Webhook URL</strong> where Skrill will send payment notifications (e.g., <code>https://yourwebsite.com/webhooks/skrill</code>).</p>
+                        </li>
+                        <li>
+                            <p>You can also set up <strong>Instant Payment Notifications (IPN)</strong> for payment status updates, ensuring your system gets notified when a transaction status changes (e.g., payment completed, failed, etc.).</p>
+                            <p>Skrill will send a notification to this URL whenever there is a payment event. Make sure your system is configured to process these notifications.</p>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the Webhook settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>4. Add API Credentials and Webhook URL to Your Admin Panel</strong></h4>
+                    <ol>
+                        <li>
+                            <p><strong>Log in to your Admin Panel</strong>: Navigate to the section where you manage your payment gateways.</p>
+                        </li>
+                        <li>
+                            <p><strong>Configure Skrill</strong>:</p>
+                            <ul>
+                                <li><strong>Skrill Merchant ID (Email)</strong>: Paste the <strong>Merchant ID</strong> from your Skrill account.</li>
+                                <li><strong>Webhook URL</strong>: Enter the <strong>Webhook URL</strong> you configured earlier to receive payment status updates from Skrill.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>5. Configure Payment Options</strong></h4>
+                    <p>In the <strong>Admin Panel</strong>, ensure that:</p>
+                    <ul>
+                        <li><strong>Skrill</strong> is enabled as a payment option for users to select when making a payment.</li>
+                        <li>Specify any additional settings you may need, such as:<ul>
+                                <li>Accepted currencies (e.g., USD, EUR, GBP).</li>
+                                <li>Transaction limits (if needed).</li>
+                                <li>Payment methods available via Skrill (e.g., credit cards, bank transfers, etc.).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <hr>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/skrill1.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see skrill setup
+                      </figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/Gateway/skrill2.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can see skrill setup
+                      </figcaption>
+                    </figure>
+                    <hr>
+                    <h4><strong>6. Testing the Payment Setup</strong></h4>
+                    <ol>
+                        <li><strong>Switch to Sandbox Mode</strong>: Before going live, use Skrill&rsquo;s <strong>Sandbox Mode</strong> to test payments.</li>
+                        <li>Perform a test payment on your site using Skrill&rsquo;s sandbox environment.</li>
+                        <li><strong>Ensure Webhook Notifications</strong>: Verify that your system is correctly receiving and processing payment notifications from Skrill.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>7. Switching to Live Mode</strong></h4>
+                    <ol>
+                        <li>After successful testing, <strong>switch to Live Mode</strong> in the Skrill Merchant Dashboard.</li>
+                        <li>Replace the <strong>Sandbox API credentials</strong> with your <strong>Live API credentials</strong> (Merchant ID, API Username, API Password, and API Signature) in your admin panel.</li>
+                        <li><strong>Save</strong> the settings and start accepting real payments.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>Additional Configuration (Optional)</strong></h3>
+                    <ul>
+                        <li><strong>Email Notifications</strong>: Enable email notifications for payment updates, such as successful payments, refunds, and failed transactions.</li>
+                        <li><strong>Transaction History</strong>: Monitor payments directly from your Skrill Merchant Dashboard and manage transaction details.</li>
+                    </ul>
+                    <hr>
+                    <h3><strong>Final Steps</strong></h3>
+                    <ol>
+                        <li><strong>Go Live</strong>: Once your settings are configured for live payments, and everything is working as expected, you can start accepting real transactions.</li>
+                        <li><strong>Monitor Payments</strong>: Check payment statuses, transaction history, and webhooks for any issues through your Skrill Merchant Dashboard.</li>
+                    </ol>
+                    <hr>
+                    <p>This guide will help to set up <strong>Skrill</strong> in their admin panel, including the configuration of API credentials, webhook setup, and enabling Skrill as a payment method.</p>
+                  </div>
+                  <div class="shortcode_title" id="gateway_braintree">
+                    <h3><strong>Payment Gateway - Braintree</strong></h3>
+                    <h4><strong>1. Sign Up or Log In to Braintree</strong></h4>
+                    <ol>
+                        <li><strong>Go to Braintree&apos;s website</strong>: Visit <a rel="noopener" target="_new" href="https://www.braintreepayments.com/">Braintree</a> and sign up for an account or log in if you already have one.</li>
+                        <li>Once logged in, you will be directed to the <strong>Braintree Control Panel</strong>.</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>2. Access API Keys</strong></h4>
+                    <ol>
+                        <li>
+                            <p>In the <strong>Braintree Control Panel</strong>, go to <strong>Settings</strong> &gt; <strong>API</strong>.</p>
+                        </li>
+                        <li>
+                            <p>Here, you will see your <strong>API credentials</strong>:</p>
+                            <ul>
+                                <li><strong>Merchant ID</strong>: Your unique identifier for Braintree transactions.</li>
+                                <li><strong>Public Key</strong>: Used for client-side operations (e.g., frontend).</li>
+                                <li><strong>Private Key</strong>: Used for backend API requests (transactions).</li>
+                                <li><strong>Environment: </strong> Either <strong>Sandbox</strong> or <strong>Live</strong></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Copy the keys</strong> that you will need:</p>
+                            <ul>
+                                <li><strong>Private Key</strong>: For backend integration (this should be kept secret).</li>
+                                <li><strong>Public Key</strong>: For frontend use (client-side integration).</li>
+                                <li><strong>Merchant ID</strong>: To uniquely identify your account.</li>
+                            </ul>
+                            <p><strong>Important</strong>: Keep your <strong>Private Key</strong> safe and secure.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>3. Set Up Webhooks</strong></h4>
+                    <ol>
+                        <li>In the <strong>Braintree Control Panel</strong>, go to <strong>Settings</strong> &gt; <strong>Webhooks</strong>.</li>
+                        <li>Click on <strong>Add Webhook</strong>.</li>
+                        <li><strong>Enter the Webhook URL</strong>: This is the URL on your server that will receive notifications from Braintree (e.g., <code>https://yourwebsite.com/webhooks/braintree</code>).</li>
+                        <li>Select the webhook events you want to receive notifications for, such as:<ul>
+                                <li><strong>Transaction Successful</strong> (<code>transaction.sale.succeeded</code>)</li>
+                                <li><strong>Transaction Failed</strong> (<code>transaction.sale.failed</code>)</li>
+                                <li><strong>Subscription Events</strong> (if you use subscriptions)</li>
+                                <li><strong>Chargebacks</strong></li>
+                            </ul>
+                        </li>
+                        <li><strong>Save</strong> the webhook settings.</li>
+                    </ol>
+                    <p>After saving, you will receive a <strong>Webhook Signature Key</strong>. This key will be used to verify the authenticity of incoming webhook events.</p>
+                    <hr>
+                    <h4><strong>4. Add API Keys and Webhook URL to Your Admin Panel</strong></h4>
+                    <ol>
+                        <li>
+                            <p><strong>Log in to your Admin Panel</strong>: Navigate to the section where you manage your payment gateways.</p>
+                        </li>
+                        <li>
+                            <p><strong>Configure Braintree</strong>:</p>
+                            <ul>
+                                <li><strong>Merchant ID</strong>: Paste the <strong>Merchant ID</strong> from your Braintree account.</li>
+                                <li><strong>Public Key</strong>: Paste the <strong>Public Key</strong> from Braintree (for client-side integration).</li>
+                                <li><strong>Private Key</strong>: Paste the <strong>Private Key</strong> from Braintree (for backend API calls).</li>
+                                <li><strong>Webhook URL</strong>: Enter the <strong>Webhook URL</strong> you configured earlier.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Save</strong> the settings.</p>
+                        </li>
+                    </ol>
+                    <hr>
+                    <h4><strong>5. Configure Payment Options</strong></h4>
+                    <p>In the <strong>Admin Panel</strong>, ensure that:</p>
+                    <ul>
+                        <li><strong>Braintree</strong> is enabled as a payment gateway.</li>
+                        <li>Specify additional settings such as accepted payment methods (e.g., <strong>credit cards</strong>, <strong>PayPal</strong>, <strong>Apple Pay</strong>, etc.).</li>
+                        <li>If you&apos;re using <strong>subscriptions</strong>, configure any recurring billing settings.</li>
+                    </ul>
+                    <hr>
+                    <h4><strong>6. Testing the Payment Setup</strong></h4>
+                    <ol>
+                        <li><strong>Switch to Sandbox Mode</strong>: In the <strong>Braintree Control Panel</strong>, ensure that your environment is set to <strong>Sandbox</strong> (for testing purposes).</li>
+                        <li>Perform a test payment on your site or application using the <strong>Braintree Sandbox</strong> environment.</li>
+                        <li><strong>Ensure Webhook Notifications</strong>: Verify that your system is receiving webhook notifications when a payment status changes (e.g., successful, failed).</li>
+                    </ol>
+                    <hr>
+                    <h4><strong>7. Switching to Live Mode</strong></h4>
+                    <ol>
+                        <li>After successful testing, <strong>switch to Live Mode</strong> in the <strong>Braintree Control Panel</strong>.</li>
+                        <li>Replace the <strong>Sandbox API credentials</strong> with <strong>Live API credentials</strong> (Merchant ID, Public Key, and Private Key) in your admin panel.</li>
+                        <li><strong>Save</strong> the settings and you&apos;re ready to start processing real payments.</li>
+                    </ol>
+                    <hr>
+                    <h3><strong>Additional Configuration (Optional)</strong></h3>
+                    <ul>
+                        <li><strong>Email Notifications</strong>: Set up email notifications for successful transactions, failed transactions, and chargebacks.</li>
+                        <li><strong>Currency and Country</strong>: Ensure that Braintree is configured to accept payments in the correct currency and country according to your business.</li>
+                    </ul>
+                    <hr>
+                    <h3><strong>&nbsp;Final Steps</strong></h3>
+                    <ol>
+                        <li><strong>Go Live</strong>: Once everything is tested successfully in sandbox mode and you&apos;re using live API credentials, your system will be able to process real payments.</li>
+                        <li><strong>Monitor Payments</strong>: You can view payment statuses, track transactions, and manage payments directly from the Braintree Control Panel.</li>
+                    </ol>
+                    <hr>
+                    <p><span style="text-align: inherit;">This guide will help </span><strong style="text-align: inherit;"> to set up </span><strong style="text-align: inherit;">Braintree</strong><span style="text-align: inherit;"> in their admin panel, including entering API keys, setting up webhooks, and enabling payment options for real transactions.</span><strong>Step-by-Step Guide for End Users to Set Up Braintree in Your Admin Panel</strong></h3>
+                  </div>
                 </article>
                 <article class="documentation_body doc-section" id="dashboard">
                   <div class="shortcode_title">
@@ -4769,12 +5681,14 @@
                         <li>
                           Email Notification switch is enabled then user will
                           get notification on email for every new order,
-                          welcome, bonus etc
+                          welcome, bonus etc. Otherwise user will not get
+                          notification on email.
                         </li>
                         <li>
                           Phone Notification switch is enabled then user will
                           get notification on phone for every new order,
-                          welcome, bonus etc
+                          welcome, bonus etc. Otherwise user will not get 
+                          notification on phone.
                         </li>
                       </ul>
                     </div>
@@ -4802,7 +5716,7 @@
                         />
                         <figcaption class="text-center">
                           By following this screenshot you can go to pagination
-                          settings
+                          settings. You can limit the number of items per page of blogs on frontend page also contests/lotteries.
                         </figcaption>
                       </figure>
                     </div>
@@ -4893,7 +5807,7 @@
                     <div>
                       <p>
                         You can update your Robot rules by Easily and quickly
-                        also can see this instantly by Click Here Button
+                        also can see this instantly by Click Here Button. 
                       </p>
                       <figure>
                         <img
@@ -4983,7 +5897,6 @@
                         </li>
                       </ol>
                     </div>
-
                     <p>Withdraw Method list here</p>
                     <figure>
                       <img
@@ -5023,9 +5936,27 @@
                   </div>
                   <div class="shortcode_title" id="payemnt_method">
                     <h2 class="load-order-2">Payment Method</h2>
+                    <p>We have two type of payment method</p>
+                    <ul>
+                      <li>One is Auto Payment Method</li>
+                      <li>Another is Manual Payment Method</li>
+                    </ul>
+                    <h6>Auto Payment Method</h6>
+                    <ul>
+                      <li>Step 1: Choose one of payment method without wallet (wallet is a default payment method) and click to edit button.</li>
+                      <li>Step 2: You can change the payment method name, minimum amount, maximum amount, percentage charge, fixed charge, gateway image and payment gateway credentials. </li>
+                      <li>Step 3: If you see have an webhook URL, you can copy it and paste it on your payment gateway dashboard.</li>
+                      <li>Step 4: After all the changes are done, click to save button.</li>
+                    </ul>
+                    <h6>Manual Payment Method</h6>
+                    <ul>
+                      <li>Step 1: Click to Create Manual Payment Method button on the top right corner.</li>
+                      <li>Step 2: Then the payment method name, minimum amount, maximum amount, percentage charge, fixed charge, gateway image and payment instructions. </li>
+                      <li>Step 4: After all the changes are done, click to save button.</li>
+                    </ul>
                     <p>
                       You can set payment method by following screenshot here.
-                      We have added some default payment methods for you.
+                      We have added some default payment methods for you. You can create manual payment method.
                     </p>
                     <div class="steps-panel">
                       <ol class="ordered-list">
@@ -5049,9 +5980,44 @@
                         Methods
                       </figcaption>
                     </figure>
-
                     <p>
-                      Payment Method Edit and update the Gateway Credentials
+                      Create a new Manual Payment Method by following screenshot. 
+                      <ul>
+                        <li>Name (Required). This is the name of the payment method</li>
+                        <li>Minimum Amount (Required). This is the minimum amount that can be paid</li>
+                        <li>Maximum Amount (Required). This is the maximum amount that can be paid</li>
+                        <li>Percentage Charge (Optional). This is the percentage charge that will be added to the total amount</li>
+                        <li>Fixed Charge (Optional). This is the fixed charge that will be added to the total amount</li>
+                        <li>Gateway Image (Required). This is the image that will be displayed on the payment page</li>
+                        <li>Payment Instruction (Required). This is the instructions that will be displayed on the payment page</li>
+                      </ul>
+                    </p>
+                    <figure>
+                      <img
+                        class="w-100 img-thumbnail"
+                        src="img/admin/paymentMethod3.png"
+                        alt="go to Appearance -> Import Demo Data"
+                      />
+                      <figcaption class="text-center">
+                        By following this screenshot you can Update Payment
+                        Method
+                      </figcaption>
+                    </figure>
+                    <p>
+                      Payment Method Edit and update the Gateway Credentials,
+                      <ul>
+                        <li>Name (Required). This is the name of the payment method</li>
+                        <li>Minimum Amount (Required). This is the minimum amount that can be paid</li>
+                        <li>Maximum Amount (Required). This is the maximum amount that can be paid</li>
+                        <li>Percentage Charge (Optional). This is the percentage charge that will be added to the total amount</li>
+                        <li>Fixed Charge (Optional). This is the fixed charge that will be added to the total amount</li>
+                        <li>Gateway Image (Required). This is the image that will be displayed on the payment page</li>
+                        <li>Payment Gateway Credentials (Required). This is the credentials that will be used to connect to the payment gateway</li>
+                      </ul>
+
+                      <strong>Webhook URL:</strong>
+                      It's used to notify the payment gateway that the payment has been completed. This is the URL that will be called when the payment is completed.
+                      Our system has already set up a webhook URL for you. You just need to copy this url and paste it on your payment gateway dashboard. 
                     </p>
                     <figure>
                       <img
@@ -5067,6 +6033,10 @@
                   </div>
                   <div class="shortcode_title" id="languages">
                     <h2 class="load-order-2">Languages</h2>
+                    <p>
+                      We have provided easy and fast way to manage languages. You can use main json file to edit a language and upload it Also
+                      you can use json editor tool to edit a language.
+                    </p>
                     <p>
                       To manage you multiple languages you can set languages by
                       following screenshot here.
@@ -5093,9 +6063,15 @@
                       </figcaption>
                     </figure>
                     <div>
-                      <p>
-                        You can create new language by following screenshot here
-                      </p>
+                      <h6>Add New Language</h6>
+                      <ul>
+                        <li>Step 1: Click to Add New Language button</li>
+                        <li>Step 2: Select a language (it will auto filup the code, flag code and name)</li>
+                        <li>Step 3: Upload Admin language file (Optional) (Get help to click Question mark where you can see downloadable json file. Download it and change the language <strong>Check Json Validity</strong> and then upload.)</li>
+                        <li>Step 4: Upload Frontend language file (Optional) as same as Admin</li>
+                        <li>Step 5: Change status (Active or Inactive) and check merk on the checkbox to make it default</li>
+                        <li>Step 6: Click to Create button</li>
+                      </ul>
                       <figure>
                         <img
                           class="w-100 img-thumbnail"
@@ -5832,6 +6808,6 @@
     <script src="js/onpage-menu.js"></script>
     <script src="js/main.js"></script>
     <script src="js/search.js"></script>
-
+    <script src="js/folderStructure.js"></script>
   </body>
 </html>

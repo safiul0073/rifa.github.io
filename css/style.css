@@ -9798,4 +9798,59 @@ figure figcaption {
     max-width: 100%;
 }
 
+.folder-structure {
+    list-style: none;
+    padding-left: 0;
+}
+
+.folder-structure li {
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.folder-structure .folder {
+    color: #2c3e50;
+    cursor: pointer;
+    position: relative;
+}
+
+.folder-structure .folder::before {
+    content: "📁";
+    position: absolute;
+    left: 0;
+    font-size: 1.1em;
+}
+
+.folder-structure .file {
+    color: #576574;
+}
+
+.folder-structure .file::before {
+    content: "📄";
+    position: absolute;
+    left: 0;
+    font-size: 1.1em;
+}
+
+/* Nested items */
+.folder-structure ul {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 8px;
+    border-left: 1px dashed #ccc;
+}
+
+/* Hover effects */
+.folder-structure .folder:hover {
+    color: #3498db;
+    background: #f8f9fa;
+}
+
+/* Expanded state */
+.folder.expanded::before {
+    content: "📂";
+}
+
 /*---------------------------------------------------- */
